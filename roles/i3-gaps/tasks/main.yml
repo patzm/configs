@@ -49,6 +49,7 @@
         force: yes
       with_items:
       - "{{ screenshot_script }}"
+      - "{{ set_wallpaper_script }}"
       - "{{ i3_exit_script }}"
       - "{{ i3_refresh_script }}"
 

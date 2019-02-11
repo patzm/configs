@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+wallpaper="$1"
+if [ -f $wallpaper ]; then
+	hsetroot -fill $wallpaper
+else
+	echo "$wallpaper does not exist, falling back to solid color."
+	hsetroot -solid "#232829"
+fi
+
